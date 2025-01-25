@@ -12,7 +12,7 @@ const Navbar = () => {
       <div className="max-w-[calc(100% + 2rem)] mx-auto px-2">
         <div className="flex justify-between h-16 items-center">
           {/* Contenedor del Logo */}
-          <div className="ml-2 sm:ml-4"> {/* Ajustado el margen izquierdo */}
+          <div className="ml-2 sm:ml-4 flex-shrink-0"> {/* Añadido flex-shrink-0 para evitar que se reduzca */}
             <Link href="/" className="flex items-center">
               <div className="w-48 h-14 relative">
                 <Image
@@ -25,6 +25,7 @@ const Navbar = () => {
             </Link>
           </div>
 
+          {/* Menú de navegación */}
           <div className="hidden md:flex items-center space-x-4">
             <Link
               href="/"
