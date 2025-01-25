@@ -12,7 +12,7 @@ const Navbar = () => {
       <div className="max-w-[calc(100% + 2rem)] mx-auto px-2">
         <div className="flex justify-between h-16 items-center">
           {/* Contenedor del Logo */}
-          <div className="mr-auto ml-1 sm:ml-1">
+          <div className="ml-2 sm:ml-4"> {/* Ajustado el margen izquierdo */}
             <Link href="/" className="flex items-center">
               <div className="w-48 h-14 relative">
                 <Image
